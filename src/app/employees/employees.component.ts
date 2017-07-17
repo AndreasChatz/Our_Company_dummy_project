@@ -15,6 +15,10 @@ export class EmployeesComponent implements OnInit {
   constructor(private employeeService: EmployeeService) { }
 
   ngOnInit() {
+
+  }
+
+  onFetchEmployees() {
     this.employees = this.employeeService.getEmployees();
   }
 
