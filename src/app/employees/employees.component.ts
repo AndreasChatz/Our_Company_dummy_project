@@ -12,6 +12,7 @@ import { EmployeeService } from '../employee.service';
 })
 export class EmployeesComponent implements OnInit {
   employees: Observable<any>;
+  showEmployees: Boolean = true;
   constructor(private employeeService: EmployeeService) { }
 
   ngOnInit() {
@@ -20,6 +21,7 @@ export class EmployeesComponent implements OnInit {
 
   onFetchEmployees() {
     this.employees = this.employeeService.getEmployees();
+    this.showEmployees = !this.showEmployees;
   }
 
 }
