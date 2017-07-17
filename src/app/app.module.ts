@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { EmployeeComponent } from './employee/employee.component';
 import { EmployeesComponent } from './employees/employees.component';
 import { EmployeeService } from './employee.service';
+import { UpperLowerCasePipe } from './custom-pipes/upper-lower-case.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     EmployeeComponent,
-    EmployeesComponent
+    EmployeesComponent,
+    UpperLowerCasePipe
   ],
   imports: [
     BrowserModule,

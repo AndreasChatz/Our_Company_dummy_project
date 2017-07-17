@@ -15,7 +15,6 @@ export class EmployeeService {
     return this.http.get('https://jsonplaceholder.typicode.com/users')
       .map(
         (response: Response) => {
-          console.log(response.json());
           return response.json();
         }
       );
