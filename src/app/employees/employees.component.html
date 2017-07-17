@@ -1,4 +1,13 @@
-<p>
-  employees works!
-</p>
-<app-employee></app-employee>
+<div class="row">
+  <div class="col-md-12">
+    <button class="btn btn-success">Doulevei</button>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <app-employee
+    *ngFor="let employee of employees | async"
+    [employee] = "employee"
+    ></app-employee>
+  </div>
+</div>
