@@ -1,4 +1,4 @@
-import { Address } from './address.model';
+import { Address } from '../models/address.model';
 import { Company } from './company.model';
 
 export class Employee {
